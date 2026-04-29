@@ -1,0 +1,118 @@
+.India {
+  min-height: 100vh;
+  background-color: #1a1a2e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+  padding: 1rem 2rem;
+  background-color: #16213e;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.india-hero {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+  color: #1a1a2e;
+}
+
+.india-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.india-hero .subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.india-content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.info-card {
+  background-color: #16213e;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.info-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff9933;
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.facts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.facts-list li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2a2a4a;
+  color: #ccc;
+}
+
+.facts-list li:last-child {
+  border-bottom: none;
+}
+
+.facts-list li strong {
+  color: #61dafb;
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.highlight-item {
+  background-color: #0f3460;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.highlight-item:hover {
+  transform: translateY(-4px);
+}
+
+.highlight-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #ff9933;
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.5;
+}
