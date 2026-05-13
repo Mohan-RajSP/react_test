@@ -15,7 +15,8 @@ This is a React-based single-page application that uses client-side routing to d
 │       ├── India.js        # India page component
 │       ├── India.css       # India page styles
 │       ├── Us.js           # US page component
-│       └── Greece.js       # Greece page component
+│       ├── Greece.js       # Greece page component
+│       └── Spain.js        # Spain page component
 ```
 
 ## Dependencies
@@ -34,20 +35,22 @@ This is a React-based single-page application that uses client-side routing to d
 The root component that sets up the application's routing using `react-router-dom`.
 
 - Wraps the application in a `<BrowserRouter>` (`Router`).
-- Defines four routes via `<Routes>` and `<Route>`:
+- Defines five routes via `<Routes>` and `<Route>`:
   - **`/`** → renders the `Home` component
   - **`/india`** → renders the `India` component
   - **`/us`** → renders the `Us` component
   - **`/greece`** → renders the `Greece` component
+  - **`/spain`** → renders the `Spain` component
 - Imports the `India` page component from `./pages/India`.
 - Imports the `Us` page component from `./pages/Us`.
 - Imports the `Greece` page component from `./pages/Greece`.
+- Imports the `Spain` page component from `./pages/Spain`.
 
 ### `Home` — `src/App.js`
 
 A functional component defined within `App.js` that serves as the landing page.
 
-- Renders a navigation bar (`nav.nav-bar`) with `<Link>` elements to `/india`, `/us`, and `/greece`.
+- Renders a navigation bar (`nav.nav-bar`) with `<Link>` elements to `/india`, `/us`, `/greece`, and `/spain`.
 - Displays a welcome message ("Hello!") and subtitle inside `.home-content`.
 - Styled via `src/App.css`.
 
@@ -70,15 +73,15 @@ A functional component that displays a page about Greece.
 - Renders a `<div>` with the class `App`.
 - Displays a heading: "Welcome Greece!".
 
+### `Spain` — `src/pages/Spain.js`
+
+A functional component that displays a page about Spain.
+
+- Renders a `<div>` with the class `App`.
+- Displays a heading: "Hello Spain!".
+
 ## Routing
 
 Routing is handled by `react-router-dom` v6 using the `BrowserRouter` pattern.
 
 | Path      | Component | Description                       |
-| --------- | --------- | --------------------------------- |
-| `/`       | `Home`    | Landing page with welcome message |
-| `/india`  | `India`   | India country information page    |
-| `/us`     | `Us`      | US country information page       |
-| `/greece` | `Greece`  | Greece country page               |
-
-Navigation between pages is done using `<Link>` components from `react-router-dom`:
